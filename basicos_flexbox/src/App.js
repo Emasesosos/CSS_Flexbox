@@ -7,10 +7,10 @@ import FlexFlowOrder from './components/FlexFlowOrder/FlexFlowOrder';
 function App() {
   return (
     <Fragment>
-      <FlexContainer/>
+      { /* <FlexContainer/> */ }
       { /* <FlexDirection/> */ }
       { /* <FlexWrap/> */ }
-      { /* <FlexFlowOrder/> */ }
+      {  <FlexFlowOrder/>  }
     </Fragment>
   );
 }
