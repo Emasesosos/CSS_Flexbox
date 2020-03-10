@@ -4,7 +4,8 @@ import React, { Fragment } from 'react';
 // import FlexWrap from './components/FlexWrap/FlexWrap';
 // import FlexFlowOrder from './components/FlexFlowOrder/FlexFlowOrder';
 // import FlexGrow from './components/FlexGrow/FlexGrow';
-import FlexGrow2 from './components/FlexGrow/FlexGrow2';
+// import FlexGrow2 from './components/FlexGrow/FlexGrow2';
+import AlineacionFlex from './components/AlineacionFlex/AlineacionFlex';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       { /* <FlexWrap/> */ }
       { /* <FlexFlowOrder/> */ }
       { /* <FlexGrow/> */ }
-      {  <FlexGrow2/>  }
+      { /* <FlexGrow2/> */ }
+      { <AlineacionFlex/> }
     </Fragment>
   );
 }
