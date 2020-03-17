@@ -5,7 +5,10 @@ import React, { Fragment } from 'react';
 // import FlexFlowOrder from './components/FlexFlowOrder/FlexFlowOrder';
 // import FlexGrow from './components/FlexGrow/FlexGrow';
 // import FlexGrow2 from './components/FlexGrow/FlexGrow2';
-import AlineacionFlex from './components/AlineacionFlex/AlineacionFlex';
+// import AlineacionFlex from './components/AlineacionFlex/AlineacionFlex';
+//import PracticaEjemplo from './components/PracticaEjemplo/PracticaEjemplo';
+// import Cards from './components/Cards/js/Cards';
+import Navs from './components/Navs/Navs';
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
       { /* <FlexFlowOrder/> */ }
       { /* <FlexGrow/> */ }
       { /* <FlexGrow2/> */ }
-      { <AlineacionFlex/> }
+      { /* <AlineacionFlex/> */ }
+      { /* <PracticaEjemplo/> */ }
+      { /* <Cards/> */ }
+      <Navs/>
     </Fragment>
   );
 }
