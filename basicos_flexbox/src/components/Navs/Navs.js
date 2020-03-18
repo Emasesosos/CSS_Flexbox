@@ -1,5 +1,6 @@
 import React from 'react';
-import './index.css';
+import './css/fontawesome-all.min.css';
+import './css/index.css';
 
 const Navs = () => {
     return (
@@ -20,10 +21,50 @@ const Navs = () => {
             <h2>Con Iconos</h2>
             <nav className="iconos">
                 <ul>
-                    <li><a href="http://localhost:3000/">Inicio</a></li>
-                    <li><a href="http://localhost:3000/">Contacto</a></li>
-                    <li><a href="http://localhost:3000/">Tienda Virtual</a></li>
-                    <li><a href="http://localhost:3000/">Asistencia</a></li>
+                    <li>
+                        <a href="http://localhost:3000/">
+                            <div className="icono">
+                                <i className="fas fa-home"></i>
+                            </div>
+                            <div className="texto">
+                                Inicio
+                                <span>Página Principal</span>
+                            </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/">
+                            <div className="icono">
+                                <i className="fas fa-envelope"></i>
+                            </div>
+                            <div className="texto">
+                                Contacto
+                                <span>Escríbenos Aquí</span>
+                            </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/">
+                            <div className="icono">
+                                <i className="fas fa-dollar-sign"></i>
+                            </div>
+                            <div className="texto">
+                                Tienda Virtual
+                                <span>Adquiere nuestros artículos</span>
+                            </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/">
+                            <div className="icono">
+                                <i className="fas fa-question"></i>
+                            </div>
+                            <div className="texto">
+                                Asistencia
+                                <span>¿Necesitas ayuda?</span>
+                            </div> 
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
