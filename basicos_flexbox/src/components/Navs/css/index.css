@@ -20,6 +20,8 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px 30px 0 30px;
+    margin-bottom: 6rem;
+    padding-bottom: 8rem;
 }
 
 nav {
@@ -102,3 +104,94 @@ nav ul a {
         flex: 1;
     }
 }
+
+/* ***** MENÚ => DROPDOWN ***** */
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown ul {
+        flex-direction: row;
+    }
+}
+
+.dropdown ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown ul li {
+        position: relative;
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+    .dropdown ul li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ff5e62;
+        display: none;
+    }
+    .dropdown ul li:hover ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .dropdown ul li a {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* ***** MENÚ => REDES SOCIALES ***** */
+
+.sociales ul li span {
+    display: none;
+}
+
+.sociales ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociales ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.sociales ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+
+.sociales ul li a[href*='youtube.com']::before {
+    content: "\f167";
+}
+
+.sociales ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+
+.sociales ul li a[href*='pinterest.com']::before {
+    content: "\f0d2";
+}
+
+/* ***** MENÚ => DROPDOWN CON REDES SOCIALES ***** */
+
+.navegacion-social-dropdown {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f51b5;
+}
+
+.navegacion-social-dropdown nav.sociales {
+    display: flex;
+    align-items: center;
+} 
